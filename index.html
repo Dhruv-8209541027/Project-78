@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>FAMILY BOOK</title>
+    </head>
+    <body>
+        <h1>FAMILY BOOK</h1>
+        <img id="image1" src="familybookcover.png">
+        <div>
+            <button type="button" onclick="flipimage()">
+                Next
+            </button>
+        </div>
+    </body>
+</html>
+<script>
+    var images[
+        "familybookcover.png",
+        "father.jpg",
+        "mother.png",
+        "son.jpg",
+        "grandpa.png",    
+    ];
+    var names[
+        "",
+        "Aashish Bansal",
+        "Kavita Bansal",
+        "Dhruv Kumar Bansal",
+        "Gyan Chand Bansal",
+    ];
+    var i=0;
+function flipimage(){
+document.getElementById("image1").innerHTML=images[i];
+  i++;
+
+if (i==6)
+  {
+    i=0;
+  }}
+</script>
